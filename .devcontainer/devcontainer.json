@@ -1,0 +1,28 @@
+{
+  "name": "pulumi-localstack-demo-dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker": {},
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers-contrib/features/pulumi:1": {},
+    "ghcr.io/devcontainers-contrib/features/localstack": {}
+
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "telemetry.telemetryLevel": "off",
+        "workbench.colorTheme": "Tokyo Night",
+        "workbench.iconTheme": "material-icon-theme",
+        "python.defaultInterpreterPath": "../src/venv/bin/python3.10"
+      },
+      "extensions": [
+        "redhat.vscode-yaml",
+        "ms-python.python",
+        "PKief.material-icon-theme",
+        "enkia.tokyo-night"
+      ]
+    }
+  }
+}
